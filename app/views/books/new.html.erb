@@ -34,21 +34,7 @@
   </tr>
 </table>
 
-<h1>Books</h1>
-<% @books.each do |list| %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td><%= book.title %></td>
-    <td><%= book.body %></td>
-    <td></td>
-  </tr>
-</table>
-<% end %>
+
 
 <h2>New Book</h2>
 <%= form_with model: @book do |f| %>

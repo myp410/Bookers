@@ -1,10 +1,11 @@
 <h1>Books</h1>
-<% @books.each do |list| %>
+<% @books.each do |book| %>
 <table>
   <tr>
     <th>Title</th>
     <th>Body</th>
-    <th></th>
+    <th><%= link_to "show", book_path(book.id) %></th>
+    <th><%= link_to "delete",destroy_list_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %></th>
   </tr>
   <tr>
     <td><%= book.title %></td>
