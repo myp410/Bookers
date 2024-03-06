@@ -51,3 +51,15 @@ li {
   border-right: 1px solid black;
 }
 
+.flash-message {
+  padding: 15px 25px;
+  margin: 16px 0;
+}
+
+.flash-message.notice {
+  color: #339900;
+}
+
+.flash-message.alert {
+  color: #930403;
+}
