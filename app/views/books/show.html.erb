@@ -2,6 +2,11 @@
 <p><b>Title:</b><%= @book.title %></p>
 
 <p><b>Body:</b><%= @book.body %></p>
-
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back", books_path %>
+<ul>
+  <li class="nav-item">
+    <%= link_to "Edit", edit_book_path(@book.id), class: "nav-link" %>
+  </li>
+  <li class="nav-item">
+    <%= link_to "Back", books_path, class: "nav-link" %>
+  </li>
+</ul>

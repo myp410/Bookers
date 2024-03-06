@@ -23,3 +23,31 @@
 body {
   font-family: verdana;
 }
+
+a {
+  color: black;
+}
+
+table {
+  font-size: 80%;
+  border-spacing: 80%;
+  border-collapse: separate;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-item {
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+.nav-item:nth-child(1) {
+  border-right: 1px solid black;
+}
+
